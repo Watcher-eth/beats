@@ -49,7 +49,7 @@ import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
 import { v4 as uuidv4 } from "uuid";
 import { useCollectionQuery } from "@spinamp/spinamp-hooks";
 import FFmpeg from "../../components/Music Player/FFmpeg"
-function index() {
+function Index() {
   const router = useRouter();
   const waveform = useRef(null);
   const { profile, isAuthenticated } = useProfile();
@@ -580,4 +580,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

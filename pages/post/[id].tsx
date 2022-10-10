@@ -114,6 +114,7 @@ if (video && comments)
              
                       
                         <Image
+                      alt="cover"
                           width={"400px"}
                           height={"400px"}
                           maxW="900px"
@@ -138,6 +139,7 @@ if (video && comments)
               src={normalizeUrl(video?.metadata?.media[0]?.original?.url)}
               maxW="900px"
               maxH="650px"
+              alt="cover"
               minWidth={"500px"}
               minHeight={"500px"}
               borderRadius="10px"

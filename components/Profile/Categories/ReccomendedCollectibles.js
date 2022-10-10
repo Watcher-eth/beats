@@ -50,6 +50,7 @@ export default function RecommendedCollectiblesFeed(props) {
       {data.nfts.items.map((item, index) => {
         return (
           <Box
+          key={index}
             bg="blackAlpha"
             w={"auto"}
             h={"fit-content"}
@@ -61,6 +62,7 @@ export default function RecommendedCollectiblesFeed(props) {
               src={item.originalContent.uri}
               borderTopRadius="10px"
               objectFit="cover"
+              alt="cover"
             />
 
             <VStack spacing="2px">
@@ -70,6 +72,7 @@ export default function RecommendedCollectiblesFeed(props) {
                     src={item.originalContent.uri}
                     boxSize={"20px"}
                     borderRadius="5px"
+                    alt="cover"
                   />
                   <Text fontSize="sm" color="gray.600">
                     {item.name}

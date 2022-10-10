@@ -51,8 +51,8 @@ if(playlists)
    
    
      p="1rem"> {playlists.map((item, index) => {
-        return ( <Link   href={`/playlist/${item?.id}`}
-       ><a> <motion.div   key={index} whileHover={{scale: 1.04}} ><Box alignItems={"center"}  p="15px" boxShadow="lg" borderRadius={"12px"}><Text alignSelf={"center"} fontSize={"20px"}>{item?.title}</Text></Box></motion.div></a></Link>)})}
+        return ( <Link key={index}  href={`/playlist/${item?.id}`}
+       ><a> <motion.div   key={index} whileHover={{scale: 1.04}} ><Box key={index} alignItems={"center"}  p="15px" boxShadow="lg" borderRadius={"12px"}><Text alignSelf={"center"} fontSize={"20px"}>{item?.title}</Text></Box></motion.div></a></Link>)})}
   </SimpleGrid>  </VStack>
   )
 }

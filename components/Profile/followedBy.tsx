@@ -63,9 +63,10 @@ function FollowedBy(props) {
         <HStack borderRadius={"35px"} spacing="5px">
           <motion.div whileHover={{ scale: 1.03 }} onClick={onOpen}>
             <AvatarGroup size="sm" max={3}>
-              {data.mutualFollowersProfiles.items.map((item) => {
+              {data.mutualFollowersProfiles.items.map((item, index) => {
                 return (
                   <Avatar
+                  key={index}
                     name={item.name}
                     src={normalizeUrl(item.picture?.original?.url)}
                   />

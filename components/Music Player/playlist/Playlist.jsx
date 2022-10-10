@@ -17,7 +17,7 @@ function Playlist() {
       </div> */}
       <ul className={styles.loi}>
         {songslist.map((song, i) => (
-          <motion.div whileHover={{scale: 1.008}}>
+          <motion.div whileHover={{scale: 1.008}} key={index}>
           <li
             className={styles.songContainer + (currentSong === i ? 'selected' : '')}
             key={i}
@@ -26,7 +26,7 @@ function Playlist() {
             }}
           >
             <Box height={"65px"} width={"65px"} borderRadius={"15px"}>
-         <Image height={"65px"} layout="intrinsic" width={"65px"} src={song.lossyArtworkUrl} style={{borderRadius: "5px"}}/>
+         <Image alt="track cover" height={"65px"} layout="intrinsic" width={"65px"} src={song.lossyArtworkUrl} style={{borderRadius: "5px"}}/>
          </Box>
             <HStack >
             <Box className={styles.songmeta_playlist}>

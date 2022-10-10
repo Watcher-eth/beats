@@ -59,10 +59,12 @@ export default function ProfilePage  () {
             <Image
               objectFit={"cover"}
               src={artist?.profiles?.sound?.avatarUrl}
+              alt="background cover picture"
             />
           ) : (
             <Image
             objectFit={"cover"}
+            alt="background cover picture"
             src={artist?.profiles?.catalog?.avatarUrl}
           />
           )}

@@ -64,6 +64,7 @@ function CreatedFeed(props) {
           {data?.publications?.items.map((item, index) => {
             return (
               <motion.div
+              key={index}
                 whileHover={{ scale: 1.02 }}
                 initial={{ opacity: 0, translateY: -50 }}
                 animate={{ opacity: 1, translateY: 0 }}
@@ -88,6 +89,7 @@ function CreatedFeed(props) {
                         <Image
                           width={"400px"}
                           height={"400px"}
+                          alt="track cover"
                           layout="responsive"
                           src={
                             item?.metadata?.cover?.original?.url
@@ -110,6 +112,7 @@ function CreatedFeed(props) {
                       width={"400px"}
                       height={"400px"}
                       layout="responsive"
+                      alt="image"
                       src={normalizeUrl(
                         item.metadata?.media[0]?.original?.url
                       )}

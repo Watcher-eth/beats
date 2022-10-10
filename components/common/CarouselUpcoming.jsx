@@ -76,6 +76,7 @@ function CarouselUpcoming() {
         {collection?.map((item, index) => {
           return (
             <motion.div
+            key={index}
               className={styles.item}
               whileHover={{ scale: 1.005 }}
               variants={fadeInUp}
@@ -91,6 +92,7 @@ function CarouselUpcoming() {
                       >
                         <Box height={"450px"} width={"450"}>
                           <Image
+                          alt="track cover"
                             height={"450px"}
                             width={"450"}
                             layout={"fixed"}

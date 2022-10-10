@@ -31,9 +31,9 @@ columns={[1,1,2,3]}
 
  p="1rem">
    {playlistTracks?.map((item, index) => {
-        return (<motion.div style={{borderRadius: "8px"}} whileHover={{scale: 1.01, background: "lightgray", color: "white"
+        return (<motion.div key={index} style={{borderRadius: "8px"}} whileHover={{scale: 1.01, background: "lightgray", color: "white"
         }} whileTap={{scale: 1.03, background: "gray", color: "white"
-    }} onClick={() => SetCurrent(index)} ><HStack boxShadow="lg" borderRadius="8px" p="0.2rem" m="0.15rem"><Image height="80px" width="80px" layout='intrinsic' style={{borderRadius: "5px", margin: "5px"}} src={item?.lossyArtworkUrl}/><Flex m="" direction={"column"}  key={index} p="1rem"> <Text p="0px 10px" fontSize={"20px"}>{item?.title}</Text><Text p="0px 10px" fontSize={"17px"} color={"gray.500"}>{item?.artist?.name}</Text></Flex>     </HStack></motion.div>)})}
+    }} onClick={() => SetCurrent(index)} ><HStack boxShadow="lg" borderRadius="8px" p="0.2rem" m="0.15rem"><Image height="80px" width="80px" layout='intrinsic' style={{borderRadius: "5px", margin: "5px"}} alt="cover picture" src={item?.lossyArtworkUrl}/><Flex m="" direction={"column"}  key={index} p="1rem"> <Text p="0px 10px" fontSize={"20px"}>{item?.title}</Text><Text p="0px 10px" fontSize={"17px"} color={"gray.500"}>{item?.artist?.name}</Text></Flex>     </HStack></motion.div>)})}
 </SimpleGrid></VStack>
   )
 }

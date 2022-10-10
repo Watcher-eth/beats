@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useMusicContext } from "context/MusicContext";
-import { HStack, Text, Box } from "@chakra-ui/react";
+import { HStack, Text, Box, Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import AudioControls from "./AudioControls";
 import styles from "../../styles/MusicPlayer.module.css";

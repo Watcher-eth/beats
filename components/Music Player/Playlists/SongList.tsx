@@ -8,7 +8,7 @@ function SongList(props) {
     useEffect(()=>{  fetchPlaylistById(id).then((playlist: IPlaylist[], playlistTracks: ITrack[] ) => {
         setSongs(playlistTracks)
         console.log(songs)
-      });}, [id])
+      });}, [id, songs])
 
        
 

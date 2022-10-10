@@ -83,6 +83,7 @@ export default function Home() {
                       borderRadius={"15px"}
                       boxShadow="base"
                       p="10px"
+                      key={index}
                     >
                       <VStack spacing="2px" p="8px">
                         <LensAvatar

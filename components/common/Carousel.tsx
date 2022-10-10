@@ -13,17 +13,16 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { ReactionTypes } from "../../types/index";
-import logger from "lib/logger";
+
 import styles from "../../styles/carousel.module.css";
 import { useQuery, gql } from "@apollo/client";
-import EXPLORE_PUBLICATIONS from "graphql/explore/explore-publications";
+import EXPLORE_PUBLICATIONS from "../../graphql/explore/explore-publications";
 import Link from "next/link.js";
-import LensAvatar from "../LensAvatar";
 import { normalizeUrl } from "../../lib/media";
 import useReactToPublication from "../../hooks/lens/useReactToPublication";
-import LikeButton from "components/Posts/CollectModule/LikeButtonVariant";
+import LikeButton from "../../components/Posts/CollectModule/LikeButtonVariant";
 import CollectAndMirrorButton from "../Profile/CollectAndMirrorButton";
-import CollectedBy from "components/Posts/CollectModule/CollectedBy";
+import CollectedBy from "../../components/Posts/CollectModule/CollectedBy";
 import { CollectModuleType, UploadedPost } from "../../types/local";
 
 function Carousel() {
@@ -56,7 +55,7 @@ function Carousel() {
             loading: reactionLoading,
           } = useReactToPublication(item?.id);
           return (
-            <motion.div className={styles.item} whileHover={{ scale: 1.0 }}>
+            <motion.div className={styles.item} whileHover={{ scale: 1.0 }} key={index}>
               <HStack
                 maxH={"470px"}
                 minH={"470px"}
@@ -70,6 +69,7 @@ function Carousel() {
                       <Center       minWidth="470px"
                           minHeight="470px" p="0 10px">
                         <Image
+                        alt="cover image"
                           src={normalizeUrl(
                             item?.metadata?.media[0]?.original?.url
                           )}

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
-    "@bundlr-network/client": "^0.8.5",
+    "@bundlr-network/client": "^0.8.9",
     "@chakra-ui/icons": "^2.0.9",
     "@chakra-ui/react": "^2.3.1",
     "@emotion/react": "^11.10.4",
@@ -39,6 +39,7 @@
     "framer-motion": "^6.5.1",
     "graphql": "^16.6.0",
     "ipfs": "^0.64.0",
+    "next-transpile-modules": "^9.0.0",
     "ipfs-http-client": "^57.0.3",
     "js-cookie": "^3.0.1",
     "jwt-decode": "^3.1.2",

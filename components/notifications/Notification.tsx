@@ -36,9 +36,9 @@ import usePersistStore from "../../lib/store/persist";
 import { LENS_CUSTOM_FILTERS, LENSTUBE_APP_ID } from "../../lib/constants";
 import clsx from "clsx";
 import { useEffect } from "react";
-import { useInView } from "react-cool-inview";
+;
 import { Notification, PaginatedResultInfo } from "../../types";
-import LensAvatar from "components/LensAvatar";
+import LensAvatar from "../LensAvatar";
 import Link from "next/link";
 import Image from "next/image";
 const request = {
@@ -92,26 +92,7 @@ export default function Notifications() {
     },
   });
 
-  const { observe } = useInView({
-    rootMargin: "1000px 0px",
-    onEnter: async () => {
-      try {
-        const { data } = await fetchMore({
-          variables: {
-            request: {
-              profileId: selectedChannel?.id,
-              cursor: pageInfo?.next,
-              ...request,
-            },
-          },
-        });
-        setPageInfo(data?.notifications?.pageInfo);
-        setNotifications([...notifications, ...data?.notifications?.items]);
-      } catch (error) {
-        logger.error("[Error Fetch Notifications]", error);
-      }
-    },
-  });
+  
 
   if (loading) return <div>loading</div>;
   console.log(data);

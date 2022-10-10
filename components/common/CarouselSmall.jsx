@@ -12,7 +12,7 @@ import {
   AspectRatio,
 } from "@chakra-ui/react";
 import { ReactionTypes } from "../../types/index";
-import images from "./images.js";
+
 import styles from "../../styles/carouselSmall.module.css";
 import { useQuery, gql } from "@apollo/client";
 import EXPLORE_PUBLICATIONS from "graphql/explore/explore-publications";
@@ -30,6 +30,7 @@ import PlayCollectionButton from "components/Profile/FunctionalComponents/PlayCo
 
 function CarouselSmall() {
   const { data, loading, error } = useQuery(EXPLORE_PUBLICATIONS);
+  const {SetCurrent} = useContext(playerContext)
   const { collection, isLoading, isError, refetch } = useCollectionQuery(
     "0xde0cbd5df89bb67ab804db21e9b931bad4200392"
   );
@@ -39,7 +40,7 @@ function CarouselSmall() {
         <HStack>loading</HStack>
       </VStack>
     );
-    const {SetCurrent} = useContext(playerContext)
+  
   if (error) return <div>Something went wrong in Carousel</div>;
   console.log(data);
 if (isLoading) return <div>loading</div>
@@ -75,6 +76,7 @@ if (isLoading) return <div>loading</div>
                         spacing="10px"
                       >
                         <Image
+                        alt="cover"
                           src={item?.lossyArtworkUrl}
                           position="relative"
                           className={styles.cover_image}

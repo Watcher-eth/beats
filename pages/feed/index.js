@@ -67,6 +67,7 @@ export default function Home() {
                           width="52px"
                           height="52px"
                           borderRadius="10px"
+                          alt="profile picture"
                         />
                         <Flex direction={"column"}>
                           <Text fontSize="lg">{profile.name}</Text>

@@ -56,6 +56,7 @@ const ProfilePage: FC<{ profile: Profile }> = ({ profile }) => {
             <Image
               objectFit={"cover"}
               src={normalizeUrl(profile?.coverPicture?.original?.url)}
+              alt="background cover"
             />
           ) : (
             <Box bg={"black"} w="100%"></Box>
@@ -174,7 +175,6 @@ const ProfilePage: FC<{ profile: Profile }> = ({ profile }) => {
                   <Text fontSize="30px">{profile?.stats?.totalFollowing}</Text>
                   <Text fontSize="md">Following</Text>
                 </VStack>
-                
               </HStack>
               </Center>
       <VStack m={[ "1rem 0 0 0 ","1rem 0 0 0rem"]}>

@@ -1,7 +1,7 @@
 import format from "date-fns/format";
 import Skeleton from "react-loading-skeleton";
 import Link from "next/link";
-import { normalizeUrl, resolveImageUrl } from "lib/media";
+import { normalizeUrl, resolveImageUrl } from "../lib/media";
 import { useQuery, gql } from "@apollo/client";
 import styles from "../styles/backgroundBlur.module.css";
 import React from "react";
@@ -32,13 +32,13 @@ import {
 } from "@chakra-ui/react";
 import Carousel from "../components/common/Carousel";
 import CarouselSmall from "../components/common/CarouselSmall";
-import PublicationReaction from "components/Profile/FunctionalComponents/LikeButton";
-import EXPLORE_PUBLICATIONS from "graphql/explore/explore-publications";
+import PublicationReaction from "../components/Profile/FunctionalComponents/LikeButton";
+import EXPLORE_PUBLICATIONS from "../graphql/explore/explore-publications";
 import Image from "next/image";
-import LensAvatar from "components/LensAvatar";
+import LensAvatar from "../components/LensAvatar";
 
-import FollowButton from "components/Profile/FollowButton";
-import CollectedBy from "components/Posts/CollectModule/CollectedBy";
+import FollowButton from "../components/Profile/FollowButton";
+import CollectedBy from "../components/Posts/CollectModule/CollectedBy";
 
 const CONTRACT_ADDRESS = "0xDb46d1Dc155634FbC732f92E853b10B288AD5a1d";
 

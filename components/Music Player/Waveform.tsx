@@ -26,7 +26,7 @@ const Waveform = ({ url, width, height }) => {
       waveform.current.load(url);
       /* Duration*/
     }
-  }, [url]);
+  }, [url, height]);
 
   const playAudio = () => {
     // Check if the audio is already playing

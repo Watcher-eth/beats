@@ -117,7 +117,7 @@ function MusicPost  ( )  {
                           minHeight={"500px"}
                           borderRadius="10px"
                           margin="3rem 0rem 2rem 0rem"
-                      
+                          alt="track cover"
                           src={
                             track?.lossyArtworkUrl
                           }

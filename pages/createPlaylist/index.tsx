@@ -16,7 +16,7 @@ import { Dropzone, MIME_TYPES } from "@mantine/dropzone";
 import { useProfile } from "context/context";
 import { useRouter } from "next/router";
 import uploadToIPFS from "lib/ipfs";
-function collect() {
+function CreatePlaylist() {
   const router = useRouter();
   const { profile, isAuthenticated } = useProfile();
 const [notices, setNotices] = useState<ITrack[]>()
@@ -185,4 +185,4 @@ async function uploadIPFS(data) {
   );
 }
 
-export default collect;
+export default CreatePlaylist;

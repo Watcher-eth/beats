@@ -27,7 +27,7 @@ import {
 } from "@chakra-ui/react";
 import { useProfile } from "../../context/context";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import Link from "next/link";
+import Link from "next/link"
 
 export default function CreateModal() {
   const { profile } = useProfile();
@@ -115,7 +115,7 @@ export default function CreateModal() {
                           p="10px"
                           borderRadius={"15px"}
                           bg="white"
-                          boxShadow={"lg"}
+                     
                         >
                           <HStack spacing={"4px"}>
                             <SkeletonCircle size={5} />
@@ -170,7 +170,7 @@ export default function CreateModal() {
                           p="10px"
                           borderRadius={"15px"}
                           bg="white"
-                          boxShadow={"lg"}
+                   
                         >
                           <HStack spacing={"4px"} alignSelf="center">
                             <Skeleton

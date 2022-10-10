@@ -32,7 +32,7 @@ if(track)
         }} whileTap={{scale: 1.03, background: "gray", color: "white"
     }} onClick={() => onSelect(track?.id, track?.lossyArtworkUrl)} ><HStack w="400px" boxShadow="lg" borderRadius="8px" p="0.2rem" m="0.15rem"><Image height="80px" width="80px" layout='intrinsic' style={{borderRadius: "5px", margin: "5px"}} src={track?.lossyArtworkUrl}/><Flex m="" direction={"column"}  p="1rem"> <Text p="0px 10px" fontSize={"20px"}>{track?.title}</Text><Text p="0px 10px" fontSize={"17px"} color={"gray.500"}>{track?.artist?.name}</Text></Flex>     </HStack></motion.div><VStack  p="1rem" ><Text alignSelf={"start"} fontSize={"25px"}>Selected Tracks:</Text>
     {selectedfinCover &&<HStack spacing={"14px"}>{selectedfinCover?.map((cover, index) => {
-        return(<Box  height={"100px"} width={"100px"}><Image  height={"100px"} style={{borderRadius: "5px",}} width={"100px"} layout="intrinsic" src={cover}/></Box>)
+        return(<Box key={index} height={"100px"} width={"100px"}><Image  height={"100px"} style={{borderRadius: "5px",}} width={"100px"} layout="intrinsic" src={cover}/></Box>)
     })}</HStack>}
     </VStack>
     </VStack>

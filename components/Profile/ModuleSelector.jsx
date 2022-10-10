@@ -37,7 +37,7 @@ function RadioCard(props) {
         px={50}
         py={20}
       >
-        <img></img>
+        
         {props.children}
       </Box>
     </Box>

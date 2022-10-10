@@ -14,7 +14,7 @@ console.log(collection)
     useEffect(() =>{
     loadCollection()
     console.log("hello")
-    }, [collection])
+    }, [collection, loadCollection])
 
 
   return (

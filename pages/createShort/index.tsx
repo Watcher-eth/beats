@@ -50,7 +50,7 @@ const Waveform = dynamic(() => import("components/Music Player/Waveform"), {
   ssr: false,
 });
 
-function index() {
+function Index() {
   const router = useRouter();
 
   const { profile, isAuthenticated } = useProfile();
@@ -236,4 +236,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

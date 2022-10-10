@@ -49,6 +49,7 @@ const {SetCurrent} = useContext(playerContext)
       {collection?.map((item, index) => {
         return (
           <motion.div
+          key={index}
             whileHover={{ scale: 1.02 }}
             initial={{ opacity: 0, translateY: -50 }}
             animate={{ opacity: 1, translateY: 0 }}
@@ -66,6 +67,7 @@ const {SetCurrent} = useContext(playerContext)
                     <a>
                 <Image
                   src={item?.lossyArtworkUrl}
+                  alt="track cover"
                   width={"400px"}
                   height={"400px"}
                   layout="responsive"

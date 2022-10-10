@@ -32,8 +32,9 @@ function MusicPlayer() {
     <div>
       {collection.map((item, index) => {
         return (
-          <motion.div whileHover={{ scale: 1.01 }}>
+          <motion.div key={index} whileHover={{ scale: 1.01 }}>
             <Flex
+
               m="5rem"
               w="400px"
               boxShadow={"xl"}

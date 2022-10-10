@@ -10,12 +10,12 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { ReactionTypes } from "../../types/index";
-import images from "./images.js";
+
 import styles from "../../styles/carouselCover.module.css";
 import { useQuery, gql } from "@apollo/client";
 import EXPLORE_PUBLICATIONS from "graphql/explore/explore-publications";
 import Link from "next/link.js";
-import LensAvatar from "../LensAvatar";
+
 import { normalizeUrl } from "../../lib/media";
 import useReactToPublication from "../../hooks/lens/useReactToPublication";
 import LikeButton from "components/Posts/CollectModule/LikeButtonVariant";

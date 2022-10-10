@@ -44,6 +44,7 @@ function CollectiblesFeed(props) {
       {data.nfts.items.map((item, index) => {
         return (
           <motion.div
+          key={index}
             whileHover={{ scale: 1.02 }}
             initial={{ opacity: 0, translateY: -50 }}
             animate={{ opacity: 1, translateY: 0 }}
@@ -64,6 +65,7 @@ function CollectiblesFeed(props) {
                     width={"400px"}
                     height={"400px"}
                     layout="responsive"
+                    alt="nft image"
                     style={{
                       position: "relative",
                       borderTopLeftRadius: "10px",
