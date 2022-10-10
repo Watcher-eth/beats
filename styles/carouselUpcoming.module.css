@@ -1,0 +1,41 @@
+.item {
+  min-height: 15rem;
+  min-width: 32.7rem;
+
+  padding: 8px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.cover_image {
+  width: 100%;
+
+padding: 10px;
+
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.inner_carousel {
+  display: flex;
+}
+
+.overlay_container {
+  position: absolute;
+  bottom: 65px;
+  left: 55px;
+
+  border-radius: 25px;
+}
+.overlay2_container {
+  position: absolute;
+  top: 40px;
+  right:70px;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}

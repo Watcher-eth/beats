@@ -1,0 +1,30 @@
+.item {
+  min-height: 15rem;
+  min-width: 68rem;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.cover_image {
+  width: 100%;
+
+  padding: 12px;
+
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.inner_carousel {
+  display: flex;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}
+
+.badge {
+  top: 65px;
+  right: 75px;
+  position: absolute;
+}

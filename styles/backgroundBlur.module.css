@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  height: 21%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+.container div {
+  position: absolute;
+  border-radius: 50%;
+  animation: gradient 4s infinite;
+}
+
+@keyframes gradient {
+  70% {
+    transform: scale(1.2) translate(50px);
+  }
+}
+.container div:nth-child(1) {
+  height: 90%;
+  width: 80%;
+  background-color: rgb(251, 34, 63);
+  left: -20%;
+}
+
+.container div:nth-child(2) {
+  height: 80%;
+  width: 70%;
+  background-color: rgb(23, 67, 111);
+  top: -12%;
+  right: -12%;
+  animation-delay: 8s;
+}
+
+.container div:nth-child(3) {
+  height: 65%;
+  width: 80%;
+  background-color: rgb(204, 46, 46);
+  bottom: -15%;
+  right: -20%;
+  animation-delay: 0.3s;
+}
+
+.container div:nth-child(4) {
+  height: 50%;
+  width: 75%;
+  background-color: rgb(16, 153, 203);
+  bottom: -10%;
+  left: -18%;
+  animation-delay: 1.2s;
+}
+
+.container::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(80px);
+}

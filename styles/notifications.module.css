@@ -1,0 +1,9 @@
+.card {
+  background: black;
+  padding: 3rem 5rem;
+}
+
+.text {
+  padding-top: 1rem;
+  line-height: 150%;
+}

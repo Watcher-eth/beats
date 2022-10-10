@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@images/*": ["public/images/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Profile/Categories/CollectiblesFeed.tsx", "components/Profile/Categories/CreatedFeed.tsx", "pages/profile/[handle].tsx", "pages/collect.jsx", "pages/create/index.jsx", "context/bundlrContex.jsx", "pages/create/upload/index.tss", "components/upload/PublishSong.jsx", "components/upload/createPublication.jsx", "components/Music Player/MusicPlayer.jsx", "pages/spinprofile/created.jsx", "pages/createSnippet/index.jsx"],
+  "exclude": ["node_modules"]
+}

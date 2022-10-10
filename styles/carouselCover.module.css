@@ -1,0 +1,24 @@
+.item {
+  min-height: 30rem;
+  min-width: 30rem;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.cover_image {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.inner_carousel {
+  display: flex;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}
