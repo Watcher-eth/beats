@@ -10139,7 +10139,7 @@
   "resolved" "https://registry.npmjs.org/next-themes/-/next-themes-0.2.1.tgz"
   "version" "0.2.1"
 
-"next-transpile-modules@^9.0.0":
+"next-transpile-modules@^9.1.0":
   "integrity" "sha512-yzJji65xDqcIqjvx5vPJcs1M+MYQTzLM1pXH/qf8Q88ohx+bwVGDc1AeV+HKr1NwvMCNTpwVPSFI7cA5WdyeWA=="
   "resolved" "https://registry.npmjs.org/next-transpile-modules/-/next-transpile-modules-9.1.0.tgz"
   "version" "9.1.0"
